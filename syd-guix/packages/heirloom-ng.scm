@@ -4,7 +4,7 @@
 
 ;; guix shell -v3 -C -F --link-profile coreutils -f heirloom-ng.scm
 
-(define-module (guix-packager)
+(define-module (syd-guix packages heirloom-ng)
   #:use-module (guix)
   #:use-module (guix utils)
   #:use-module (guix build utils)
@@ -30,9 +30,8 @@
       (origin
         (method git-fetch)
         (uri (git-reference
-              (url "git://127.0.0.1/git/heirloom-ng")
+              (url "https://github.com/crumbtoo/heirloom-ng.git")
               (commit "5d2623d7ad615835d9efb32eaff8ec284a381f2b")))
-        ; (file-name (git-file-name name version))
         (sha256 (base32 "1c6ysfxhbzhrmcc6b0pwf8zknhq8nkrnxzs670z64x14b02yv9s5"))))
     (inputs (list gawk ncurses ncurses/tinfo gzip byacc flex bzip2 zlib ncurses
                   ed glibc-2.33 gcc-toolchain coreutils sed))
