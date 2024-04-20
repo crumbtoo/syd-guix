@@ -59,9 +59,7 @@
          #:phases (modify-phases %standard-phases
                                  (delete 'configure))))
     (home-page "http://heirloom-ng.pindorama.dob.jp/")
-    (synopsis "A collection of standard Unix utilities that is intended to
-               provide maximum compatibility with traditional Unix while
-               incorporating additional features necessary today. ")
+    (synopsis "A collection of standard Unix utilities")
     (description "A collection of standard Unix utilities that is intended to
                   provide maximum compatibility with traditional Unix while
                   incorporating additional features necessary today.  This fork
